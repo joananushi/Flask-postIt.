@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login and Register page</title>
+
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/login.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/firstpage.css') }}">
+
+</head>
+
+<body>
+    <div class="container flex-column">
+        <img class="img" src="/static/images/postit-logo.png" alt="Logo">
+        <div class="color">
+            <ul class="list d_flex">
+                <a class="btn btn-login" href="/loginPage">Login as Employee</a>
+                <a class="btn btn-login" href="/loginPageHr">Login as HR</a>
+            </ul>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="{{ url_for('static', filename='js/login.js') }}"></script>
+</body>
+
+</html>
